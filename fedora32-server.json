@@ -1,0 +1,13 @@
+{
+  "_comment": "Build with `packer build -var-file=fedora32-server.json fedora.json`",
+  "vm_name": "fedora32-server",
+  "cpus": "2",
+  "disk_size": "8096",
+  "iso_checksum": "cd2aefdbe1b5042865a39c49d32f5d21a9537c719aa87dde34d08ca06bc6681c",
+  "iso_checksum_type": "sha256",
+  "iso_name": "Fedora-Server-dvd-x86_64-32-1.6.iso",
+  "iso_url": "https://mirror.arizona.edu/fedora/linux/releases/32/Server/x86_64/iso/Fedora-Server-dvd-x86_64-32-1.6.iso",
+  "kickstart": "ks-fedora32-server.cfg",
+  "memory": "2048",
+  "update": "true"
+}
