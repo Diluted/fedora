@@ -41,3 +41,7 @@ echo 'export JAVA_HOME=/opt/graalvm-ce-java8-20.2.0' >> ~/.bashrc
 
 # To install GraalVM Native Image, run:
 # gu install native-image
+
+if [ "$INSTALL_RUST" = "true" ] || [ "$INSTALL_RUST" = "1" ]; then
+	sudo dnf install -y rust cargo
+fi 

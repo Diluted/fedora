@@ -126,7 +126,8 @@
         "rsync_proxy={{user `rsync_proxy`}}",
         "no_proxy={{user `no_proxy`}}",
         "INSTALL_OPENJDK={{user `install_openjdk`}}",
-        "JDK_VERSION={{user `jdk_version`}}"
+        "JDK_VERSION={{user `jdk_version`}}",
+        "INSTALL_RUST={{user `install_rust`}}"
       ],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
       "scripts": [
@@ -151,6 +152,7 @@
     "install_vagrant_key": "true",
     "install_openjdk": "true",
     "jdk_version":"java-1.8.0-openjdk",
+    "install_rust":"false",
     "iso_checksum": "cd2aefdbe1b5042865a39c49d32f5d21a9537c719aa87dde34d08ca06bc6681c",
     "iso_name": "Fedora-Server-dvd-x86_64-32-1.6.iso",
     "iso_path": "/Volumes/Storage/software/fedora",
